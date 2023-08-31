@@ -1,10 +1,17 @@
 const navBar = document.querySelector(".nav-bar");
+const mobikeMenu = document.querySelector(".m-nav-bar");
+const mobileBar = document.querySelector(".m-navbar-right svg");
+const mobileMenuClose = document.querySelector(".lucide-x");
+const mobileMenuBar = document.querySelector(".lucide-align-justify");
+let toggle = false;
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 20) {
     navBar.classList.add("fixed");
+    mobikeMenu.classList.add("fixed");
   } else {
     navBar.classList.remove("fixed");
+    mobikeMenu.classList.remove("fixed");
   }
 });
 
@@ -19,15 +26,9 @@ document
     }
   });
 
-const mobileBar = document.querySelector(".m-navbar-right svg");
-const mobikeMenu = document.querySelector(".m-nav-bar");
-const mobileMenuClose = document.querySelector(".lucide-x");
-const mobileMenuBar = document.querySelector(".lucide-align-justify");
-let toggle = false;
-
 mobileBar.addEventListener("click", () => {
   if (!toggle) {
-    mobikeMenu.style.height = "auto";
+    mobikeMenu.classList.add("click");
     mobileMenuBar.style.display = "none";
     mobileMenuClose.style.display = "block";
     toggle = true;
@@ -35,7 +36,7 @@ mobileBar.addEventListener("click", () => {
 });
 mobileMenuClose.addEventListener("click", () => {
   if (toggle) {
-    mobikeMenu.style.height = "59px";
+    mobikeMenu.classList.remove("click");
     mobileMenuBar.style.display = "block";
     mobileMenuClose.style.display = "none";
     toggle = false;

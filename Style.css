@@ -820,7 +820,6 @@ body {
   pointer-events: none;
 }
 .business ul li a {
-  width: auto;
   font-size: 14px;
   font-weight: 600;
   color: white;
