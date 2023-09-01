@@ -124,19 +124,18 @@
     width: 375px;
     height: 587px;
     top: 0;
-    right: 0;
+    right: 5%;
   }
   .home-img-left {
     width: 375px;
     height: 587px;
     top: 0;
-    left: 0;
+    left: 5%;
   }
   .home-wrapper p.home-small-text {
     position: relative;
     width: 100%;
     font-size: 17px;
-    font-weight: 500;
   }
   .send-wrapper ul {
     gap: 50px;
