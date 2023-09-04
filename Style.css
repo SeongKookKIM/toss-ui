@@ -763,6 +763,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 .business img {
   width: 100%;
@@ -844,6 +845,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 .footer-wrapper {
   width: 92%;
